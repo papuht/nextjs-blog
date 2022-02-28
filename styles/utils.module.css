@@ -250,7 +250,7 @@
 	
 	position: relative;
 	left: 48%;
-	
+	font-size: 1.5rem;
 	width: 50%;
 	
 }
@@ -278,7 +278,7 @@
 	
 	color: white;
 	margin-bottom: 10px;
-	
+	font-size: 1.5rem;
 	
 }
 
@@ -294,7 +294,7 @@
 	width: 100%;
 	text-align: left;
 	color: white;
-	
+	font-size: 1.5rem;
 	
 }
 
@@ -536,7 +536,7 @@
 	width: 50%;
 	color: white;
 	margin-bottom: 10px;
-	font-size: 0.7rem;
+	font-size: 0.8rem;
 	position: relative;
 	left: 13px;
 }
@@ -554,6 +554,7 @@
 	left: 15px;
 	color: white;
 	margin: 7px;
+	font-size: 0.8rem;
 	
 }
 

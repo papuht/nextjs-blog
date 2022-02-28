@@ -24,7 +24,7 @@ export default function Blog({allPostsData, header}) {
 					src={image}
 					alt="Blogpost image"
 					width={600}
-					height={450}
+					height={420}
 					className={utilStyles.BlogThumbImage}
 				/>
 				

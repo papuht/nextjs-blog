@@ -5,7 +5,7 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Footer from './footer'
-
+import StructuredMetaData from './StructuredData'
 
 
 const blogname = 'Panun blogi'
@@ -35,6 +35,10 @@ export default function Layout({ children, home, allPostsData }) {
 		<meta name="og:type" content="website" />
 		<meta name="og:URL" content="https://puhtila-example-blog.vercel.app/" />
         <meta name="twitter:card" content="summary_large_image" />
+		<script type="application/ld+json"
+			dangerouslySetInnerHTML={{ __html: JSON.stringify(StructuredMetaData) }}
+		/>
+
       </Head>
       
         {home ? (

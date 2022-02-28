@@ -4,7 +4,7 @@ import Head from 'next/head'
 import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
 import Blog from '../../components/blog'
-import Footer from '../../components/footer'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../../components/layout.module.css'

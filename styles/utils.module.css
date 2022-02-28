@@ -323,6 +323,12 @@
 
 @media screen and (max-width: 600px) and (min-width: 0px) {
 
+.headingMd {
+ 
+  border-bottom: solid #eee;
+}
+
+
 .articleImage {
 	
 	margin-top: 5px;

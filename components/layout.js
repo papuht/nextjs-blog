@@ -33,7 +33,7 @@ export default function Layout({ children, home, allPostsData }) {
         />
         <meta name="og:title" content={siteTitle} />
 		<meta name="og:type" content="website" />
-		
+		<meta name="og:URL" content="https://puhtila-example-blog.vercel.app/" />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       

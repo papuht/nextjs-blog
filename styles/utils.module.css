@@ -1,3 +1,5 @@
+/*attributes for larger-than-mobile screens*/
+
 @media screen and (min-width: 600px) {
 
 .heading2Xl {
@@ -320,7 +322,7 @@
 
 
 
-
+/* below are classes that determine attributes for mobile screens*/
 
 @media screen and (max-width: 600px) and (min-width: 0px) {
 

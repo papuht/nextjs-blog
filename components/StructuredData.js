@@ -1,3 +1,5 @@
+//JSON for structured metadata
+
 	export const StructuredMetaData =  
 
 		{

@@ -33,7 +33,7 @@ export async function getStaticPaths() {
   }
 }
 
-
+//allPostsData is passed to the Blog as prop
 export default function Post({postData, allPostsData}) {
   return (
   
@@ -57,7 +57,7 @@ export default function Post({postData, allPostsData}) {
 			</header>
   
   
-   
+  
 	<div className={utilStyles.articleImage}>
 		<Image 
 			responsive
@@ -68,11 +68,14 @@ export default function Post({postData, allPostsData}) {
 			
 		/>
 		</div>
+		
+		
    <div className={styles.backToHome}>
           <Link href="/">
             <a>← Back to home</a>
           </Link>
         </div>
+  
   
    <Head>
         <title>{postData.title}</title>
@@ -85,6 +88,7 @@ export default function Post({postData, allPostsData}) {
   
   <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} className={utilStyles.BlogText} />
   </article>
+ 
   <Blog allPostsData={allPostsData} header={header} />
   </div>
   </Layout>

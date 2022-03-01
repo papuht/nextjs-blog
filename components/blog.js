@@ -5,7 +5,7 @@ import Date from './date'
 import Image from 'next/image'
 
 
-
+/*this function returns the thumbnail list of other blog posts*/
 export default function Blog({allPostsData, header}) {
 	return(
 	<>

@@ -4,6 +4,8 @@ import Date from './date'
 import Image from 'next/image'
 
 
+/*this function returns the Footer -element in the bottom of the page*/
+
 export default function Footer({allPostsData}) {
 	return(
 <>

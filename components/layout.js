@@ -14,7 +14,7 @@ export const siteTitle = 'Panun blogi'
 
 
 
-
+/*allPostsData is passed to Footer -element as prop*/
 export default function Layout({ children, home, allPostsData }) {
   return (
   <>

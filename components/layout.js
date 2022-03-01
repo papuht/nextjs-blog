@@ -25,6 +25,8 @@ export default function Layout({ children, home, allPostsData }) {
           name="description"
           content="Panun blogi"
         />
+		
+		{/*metadata for SEO*/}
         <meta
           property="og:image"
           content={`https://og-image.vercel.app/${encodeURI(
@@ -43,6 +45,7 @@ export default function Layout({ children, home, allPostsData }) {
       
         {home ? (
           <>
+		  {/* content to be displayed if at frontpage*/}
 		  <header className={styles.header}>
 		  <h1 className={utilStyles.heading2Xl}>{blogname}</h1>
 		  
@@ -59,7 +62,7 @@ export default function Layout({ children, home, allPostsData }) {
           </>
         ) : (
           <>
-           
+		  {/*otherwise displays article page*/}
             
           </>
         )}
@@ -69,6 +72,7 @@ export default function Layout({ children, home, allPostsData }) {
      
       
     </div>
+	{/*Footer element is called here*/}
 	<div className={utilStyles.FooterWrapper}>
 		<div className={utilStyles.FooterSection}>
 	<Footer allPostsData={allPostsData} />

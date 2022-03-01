@@ -13,6 +13,7 @@ import styles from '../../components/layout.module.css'
 const header = "Muut postaukset:"
 const name = "Panu Puhtila";
 
+{/*function returns postsData and allPostsData which contain the data for post contents and thumbnails*/}
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id)
   const allPostsData = await getSortedPostsData()
@@ -38,6 +39,7 @@ export default function Post({postData, allPostsData}) {
   return (
   
   <Layout allPostsData={allPostsData}>
+  {/*elements for author name and date*/}
   <div className={utilStyles.pageWrapper}>
   
    <header className={utilStyles.blogAuthorDiv}>
@@ -57,7 +59,7 @@ export default function Post({postData, allPostsData}) {
 			</header>
   
   
-  
+  {/*elements for big article image and return link*/}
 	<div className={utilStyles.articleImage}>
 		<Image 
 			responsive
@@ -80,7 +82,7 @@ export default function Post({postData, allPostsData}) {
    <Head>
         <title>{postData.title}</title>
       </Head>
-  
+	  {/*article content elements*/}
   <article className={utilStyles.blogArticle}>
  
   <h1 className={utilStyles.headingXl}>{postData.title}</h1>
@@ -88,7 +90,7 @@ export default function Post({postData, allPostsData}) {
   
   <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} className={utilStyles.BlogText} />
   </article>
- 
+  {/*Blog thumbnails*/}
   <Blog allPostsData={allPostsData} header={header} />
   </div>
   </Layout>

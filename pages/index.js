@@ -25,10 +25,11 @@ export async function getStaticProps() {
 
 
 
-
+//allPostsData is passed to Blog as prop
 export default function Home({allPostsData}) {
   return (
 	<>
+	{/*elements of the front page*/}
     <Layout home allPostsData ={allPostsData}>
 		<Head>
         <title>{siteTitle}</title>

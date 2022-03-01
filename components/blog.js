@@ -11,11 +11,12 @@ export default function Blog({allPostsData, header}) {
 	<>
 	<div className={utilStyles.blogWrapper}>
 	<h2 className={utilStyles.headingLg}>{header}</h2>
- 
+		{/*allPostsData is mapped to singular thumbnails*/}
 		<div className={utilStyles.blogSection}>
 		
 			{allPostsData.map(({ id, date, title, image }) => (
 				<Link href={`/posts/${id}`} key={id} className={utilStyles.blogThumbLink}>
+				{/*singular thumbnail attributes*/}
 				<div className={utilStyles.blogThumbWrapper} >
 				<div className={utilStyles.blogThumbDiv}>
 				
@@ -35,7 +36,7 @@ export default function Blog({allPostsData, header}) {
 				
 			
 			</div>
-			
+			{/*thumbnail date*/}
 			<div className={utilStyles.BlogLinkDateStyle}>
 				<Date dateString={date} />
 				</div>
